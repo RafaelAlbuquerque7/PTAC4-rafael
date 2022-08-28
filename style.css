@@ -1,9 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+
 html, body {
     height: 100%;
     width: 100%;
   }
   
-  
+  .container{
+        
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
  
   .fraseinicio{
     font-size:40px;
@@ -16,7 +22,7 @@ html, body {
   position: fixed;
   left:0;
   bottom: 0;
-  background-color: #040a0a;
+  background-color: #040a0a8f;
   width: 100%;
   
   text-align: center;
@@ -27,3 +33,6 @@ html, body {
   }
 
   
+.navbar {
+  font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}

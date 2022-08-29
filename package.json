@@ -1,0 +1,23 @@
+{
+  "name": "ptac3",
+  "version": "1.0.0",
+  "description": "atividade ptac4",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/RafaelAlbuquerque7/PTAC4-rafael.git"
+  },
+  "author": "Rafael Albuquerque",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/RafaelAlbuquerque7/PTAC4-rafael/issues"
+  },
+  "homepage": "https://github.com/RafaelAlbuquerque7/PTAC4-rafael#readme",
+  "dependencies": {
+    "express": "^4.18.1",
+    "express-handlebars": "^6.0.6"
+  }
+}

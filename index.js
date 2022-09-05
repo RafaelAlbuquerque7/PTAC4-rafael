@@ -1,7 +1,8 @@
 const express = require('express');
 const app = express();
-const hbs = require('express-handlebars')
+const hbs = require('express-handlebars');
 const PORT = process.env.PORT || 3000;
+const bodyParser = require('body-parser');
 
 //Configuração do HandleBars
 app.engine('hbs', hbs.engine({
@@ -34,7 +35,13 @@ app.get("/editar_users", (req, res)=>{
     res.render('editar_users');
 });
 
+//rota para receber o formulario de usuario
+app.post('/insert_users',(req,res)=>{
+    console.log(req.body);
+})
 
+//rota middlewares
+app.use(bodyParser.urlencoded({extended:false}));
 
 //ativar sistema
 app.listen(PORT, ()=>{

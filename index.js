@@ -35,13 +35,14 @@ app.get("/editar_users", (req, res)=>{
     res.render('editar_users');
 });
 
-//rota para receber o formulario de usuario
-app.post('/insert_users',(req,res)=>{
-    console.log(req.body);
-})
 
 //rota middlewares
 app.use(bodyParser.urlencoded({extended:false}));
+
+//rota para receber o formulario de usuario
+app.post('/insert_users',(req,res)=>{
+    console.log(req.body);
+});
 
 //ativar sistema
 app.listen(PORT, ()=>{

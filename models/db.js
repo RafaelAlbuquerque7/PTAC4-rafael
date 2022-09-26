@@ -4,7 +4,7 @@ const sequelize = new Sequelize('db_loja', 'root', '',{
     dialect: 'mysql',
     define:{
         charset: 'utf8',
-        collate: 'utf_general_ci',
+        collate: 'utf8_general_ci',
         timestamps: true
     },
     logging: false
@@ -15,3 +15,5 @@ sequelize.authenticate().then(function(){
 }).catch(function(err){
     console.log("Falha no banco");
 })
+
+module.exports = {Sequelize, sequelize}

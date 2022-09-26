@@ -3,18 +3,18 @@ const db= require('./db');
 
 const Usuario = db.sequelize.define('usuario', {
 id:{
-type: db.sequelize.INTEGER,
+type: db.Sequelize.INTEGER,
 autoIncrement: true,
 allowNull: false,
 primaryKey: true
 },
-none:{
-    type: db.sequelize.STRING,
+nome:{
+    type: db.Sequelize.STRING,
     allowNull: false
 
 },
 senha:{
-    type: db.sequelize.STRING,
+    type: db.Sequelize.STRING,
     allowNull: false
 
 }

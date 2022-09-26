@@ -19,3 +19,7 @@ senha:{
 
 }
 })
+
+Usuario.sync();
+
+module.exports = Usuario;

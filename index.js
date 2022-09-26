@@ -14,7 +14,7 @@ app.engine('hbs', hbs.engine({
 app.set('view engine', 'hbs');
 
 //rota inicial 
-//rederiza o home.hbs para abra dentro da tag {{{body}}} no layout
+//rederiza o home.hbs para abra dentro da tag {{{body}}} no layout teste
 app.get("/", (req, res)=>{
     res.render('home');
 })
